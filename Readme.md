@@ -10,9 +10,9 @@ These instructions will cover usage information and for the docker container
 
 In order to run this container you'll need docker installed.
 
-* [Windows](https://docs.docker.com/windows/started)
-* [OS X](https://docs.docker.com/mac/started/)
-* [Linux](https://docs.docker.com/linux/started/)
+- [Windows](https://docs.docker.com/windows/started)
+- [OS X](https://docs.docker.com/mac/started/)
+- [Linux](https://docs.docker.com/linux/started/)
 
 ### Usage
 
@@ -30,7 +30,6 @@ Example
     -e API_ENDPOINT=api_endpoint \
     -e MNEMONIC=mnemonic \
     -e TIMEOUT=timeout_in_ms \
-    -e TX_EXPLORER=https://your_explorer \
     -e DISCORD_CHANNEL=discord_channel \
     -e DISCORD_TOKEN=discord_token \
     -e TX_FEE_AMOUNT=2000 \
@@ -42,58 +41,56 @@ Example
 
 All the following variables are required:
 
-* `ADDRESS_PREFIX` - Chain address prefix ex `cosmos`
-* `DENOMINATION` - Denomination that the faucet releases ex `uatom`
-* `AMOUNT` - Amount that the faucet releases in `u'
-* `CHAIN_NAME` - Chain name as defined in genesis ex `testnet-1`
-* `RPC_ENDPOINT` - Node RPC to use `ex: http://your_node:26657`
-* `API_ENDPOINT` - Node API to use `ex: http://your_node:1317`
-* `MNEMONIC` - Seed phrase of the account that the faucet will release coins from
-* `TIMEOUT` - Timeout between coin request in milliseconds
-* `TX_EXPLORER` - Explorer base uri to append the transaction hash to `ex:http://192.168.100.46:8080/testnet/tx`
-* `DISCORD_CHANNEL` - The discord channel the faucet should listen on `ex: testnet` (warning: be sure to include emojis if needed)
-* `DISCORD_TOKEN` - [Create your own discord token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
-* `TX_FEE_AMOUNT` - The transition fee amount see cosmjs for more info regarding the txt fee
-* `TX_GAS_AMOUNT` - The transition gas amount see cosmjs for more info regarding the txt fee
-  
+- `ADDRESS_PREFIX` - Chain address prefix ex `cosmos`
+- `DENOMINATION` - Denomination that the faucet releases ex `uatom`
+- `AMOUNT` - Amount that the faucet releases in `u'
+- `CHAIN_NAME` - Chain name as defined in genesis ex `testnet-1`
+- `RPC_ENDPOINT` - Node RPC to use `ex: http://your_node:26657`
+- `API_ENDPOINT` - Node API to use `ex: http://your_node:1317`
+- `MNEMONIC` - Seed phrase of the account that the faucet will release coins from
+- `TIMEOUT` - Timeout between coin request in milliseconds
+- `DISCORD_CHANNEL` - The discord channel the faucet should listen on `ex: testnet` (warning: be sure to include emojis if needed)
+- `DISCORD_TOKEN` - [Create your own discord token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+- `TX_FEE_AMOUNT` - The transition fee amount see cosmjs for more info regarding the txt fee
+- `TX_GAS_AMOUNT` - The transition gas amount see cosmjs for more info regarding the txt fee
+
 #### Faucet Commands
 
-* Help command
-  
+- Help command
+
   `$help`
 
-* Request coins through the faucet
-  
+- Request coins through the faucet
+
   `$request cosmos178jjyne475dnh5jpuqfjt30ak4r64xlsxy7xsf`
 
-* Displays the current status of the node where faucet is running
-  
+- Displays the current status of the node where faucet is running
+
   `$faucet_status`
 
-* Show tap address
-  
+- Show tap address
+
   `$faucet_address`
 
-* Show transaction information for a specific transaction ID
-  
+- Show transaction information for a specific transaction ID
+
   `$tx_info 009CEA347EAFD795E8B10088D18156BC15F24362416BEEF1073BFDFD936E19B0`
 
-* Show address balance
+- Show address balance
 
   `$balance cosmos178jjyne475dnh5jpuqfjt30ak4r64xlsxy7xsf`
 
-
 ## Built With
 
-* docker
-* node.js
-* discord.js
-* cosmjs
+- docker
+- node.js
+- discord.js
+- cosmjs
 
 ## Find Us
 
-* [GitHub](https://github.com/0x4139/cosmos-discord-faucet)
-* [Dockerhub](https://hub.docker.com/r/0x4139/cosmos-discord-faucet)
+- [GitHub](https://github.com/0x4139/cosmos-discord-faucet)
+- [Dockerhub](https://hub.docker.com/r/0x4139/cosmos-discord-faucet)
 
 ## Contributing
 
@@ -106,7 +103,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Vali Malinoiu** - *Initial work* - [0x4139](https://github.com/0x4139)
+- **Vali Malinoiu** - _Initial work_ - [0x4139](https://github.com/0x4139)
 
 See also the list of [contributors](https://github.com/0x4139/cosmos-discord-faucet/contributors) who
 participated in this project.
