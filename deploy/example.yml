@@ -43,8 +43,6 @@ spec:
               value: ""
             - name: TIMEOUT
               value: ""
-            - name: TX_EXPLORER
-              value: ""
             - name: DISCORD_CHANNEL
               value: ""
             - name: DISCORD_TOKEN

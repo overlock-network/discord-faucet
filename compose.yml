@@ -14,7 +14,6 @@ services:
       - API_ENDPOINT=http://my-api-endpoint.com
       - MNEMONIC=my secret mnemonic phrase
       - TIMEOUT=3600000
-      - TX_EXPLORER=http://my-explorer.com
       - DISCORD_CHANNEL=#faucet-channel
       - DISCORD_TOKEN=my-discord-token
 
